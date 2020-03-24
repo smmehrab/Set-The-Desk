@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" stylesheets="@../css/stylesheet.css" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="app.gui.ChooseLibraryController">
+   <children>
+      <VBox layoutY="77.0" prefHeight="623.0" prefWidth="250.0" style="-fx-background-color: #f7f7f7;">
+         <children>
+            <Button fx:id="profileBtn" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="250.0" stylesheets="@../css/stylesheet.css" text="Profile" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="borrowBookBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Borrow Books" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bookSeatBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Book A Seat" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="historyBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="History" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="settingsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Settings" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Log Out" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="78.0" prefWidth="250.0" style="-fx-background-color: #04b9ee; -fx-text-fill: white;" text="SET THE DESK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <VBox layoutX="250.0" prefHeight="700.0" prefWidth="951.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="622.0" minHeight="10.0" prefHeight="622.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="84.0" prefWidth="951.0" style="-fx-background-color: #04b9ee; -fx-border-color: #ffffff; -fx-border-width: 0 0 0 5; -fx-border-style: Dotted;" />
+                  <Label layoutX="170.0" layoutY="335.0" minHeight="-Infinity" minWidth="-Infinity" text="Choose A Library" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="400.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <VBox prefHeight="623.0" prefWidth="250.0" style="-fx-background-color: #ffffff;" GridPane.rowIndex="1">
+                     <children>
+                        <HBox prefHeight="190.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="lib1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="Central Library" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="180.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib2" layoutX="190.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="Science Library" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib3" layoutX="350.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="190.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="lib4" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="180.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib5" layoutX="190.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib6" layoutX="350.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="200.0" prefHeight="190.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="lib7" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="180.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib8" layoutX="190.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="lib9" layoutX="350.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseLibrary" prefHeight="160.0" prefWidth="160.0" stylesheets="@../css/stylesheet.css" text="N/A" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="40.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

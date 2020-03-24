@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="app.gui.ChooseSeatController">
+   <children>
+      <VBox layoutY="77.0" prefHeight="623.0" prefWidth="250.0" style="-fx-background-color: #f7f7f7; -fx-border-width: 10 0 0 0;">
+         <children>
+            <Button fx:id="profileBtn" alignment="BASELINE_LEFT" cache="true" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="250.0" stylesheets="@../css/stylesheet.css" text="Profile" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="borrowBookBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Borrow Books" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bookSeatBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Book A Seat" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="historyBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="History" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="settingsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Settings" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Log Out" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="78.0" prefWidth="250.0" style="-fx-background-color: #04b9ee; -fx-text-fill: #ffffff;" stylesheets="@../css/stylesheet.css" text="SET THE DESK">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <VBox layoutX="250.0" prefHeight="700.0" prefWidth="951.0">
+         <children>
+            <GridPane>
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="622.0" minHeight="10.0" prefHeight="622.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="84.0" prefWidth="951.0" style="-fx-background-color: #04b9ee; -fx-border-color: #ffffff; -fx-border-width: 0 0 0 5; -fx-border-style: Dotted;" />
+                  <Label fx:id="chooseYourSeatLabel" layoutX="170.0" layoutY="335.0" minHeight="-Infinity" minWidth="-Infinity" text="Choose Your Seat" textAlignment="CENTER" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="400.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <VBox prefHeight="623.0" prefWidth="250.0" GridPane.rowIndex="1">
+                     <children>
+                        <HBox prefHeight="133.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="seat1" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A1" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat2" layoutX="70.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A2" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat3" layoutX="145.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A3" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat4" layoutX="220.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat5" layoutX="295.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A5" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat6" layoutX="370.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A6" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat7" layoutX="445.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A7" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat8" layoutX="520.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A8" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat9" layoutX="595.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="A9" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="133.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="seat10" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B1" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat11" layoutX="70.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B2" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat12" layoutX="145.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B3" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat13" layoutX="220.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat14" layoutX="295.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B5" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat15" layoutX="370.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B6" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat16" layoutX="445.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B7" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat17" layoutX="520.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B8" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat18" layoutX="595.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="B9" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="10.0" prefHeight="133.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="seat19" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C1" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat20" layoutX="70.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C2" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat21" layoutX="145.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C3" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat22" layoutX="220.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat23" layoutX="295.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C5" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat24" layoutX="370.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C6" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat25" layoutX="445.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C7" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat26" layoutX="520.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C8" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat27" layoutX="595.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="C9" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                           <VBox.margin>
+                              <Insets top="60.0" />
+                           </VBox.margin>
+                        </HBox>
+                        <HBox layoutX="10.0" layoutY="143.0" prefHeight="133.0" prefWidth="951.0">
+                           <children>
+                              <Button id="library" fx:id="seat28" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D1" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="60.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat29" layoutX="70.0" layoutY="35.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D2" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat30" layoutX="145.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D3" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat31" layoutX="220.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D4" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat32" layoutX="295.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D5" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat33" layoutX="370.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D6" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat34" layoutX="445.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D7" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat35" layoutX="520.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D8" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                              <Button id="library" fx:id="seat36" layoutX="595.0" layoutY="10.0" minHeight="-Infinity" minWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnChooseSeat" prefHeight="75.0" prefWidth="75.0" stylesheets="@../css/stylesheet.css" text="D9" textFill="WHITE">
+                                 <font>
+                                    <Font size="14.0" />
+                                 </font>
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="25.0" />
+                                 </HBox.margin>
+                              </Button>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

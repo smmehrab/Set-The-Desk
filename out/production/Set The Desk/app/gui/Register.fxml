@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.PasswordField?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #04b9ee;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="app.gui.RegisterController">
+   <children>
+      <Label layoutX="481.0" layoutY="43.0" style="-fx-border-width: 0 0 0 10;" text="SET THE DESK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ifMaleBtn" layoutX="246.0" layoutY="387.0" mnemonicParsing="false" onAction="#setGender" text="Male" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+         <toggleGroup>
+            <ToggleGroup fx:id="chooseGender" />
+         </toggleGroup>
+      </RadioButton>
+      <PasswordField id="passfield" fx:id="passTxt" alignment="CENTER" layoutX="855.0" layoutY="138.0" prefHeight="30.0" prefWidth="225.0" promptText="Enter Your Password" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css" />
+      <Button id="login" fx:id="registerBtn" blendMode="ADD" layoutX="979.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleClicksOnRegister" prefHeight="40.0" prefWidth="101.0" style="-fx-border-width: 2 2 2 2; -fx-border-color: white;" stylesheets="@../css/stylesheet.css" text="Register" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+      <PasswordField id="passfield" fx:id="confirmPassTxt" alignment="CENTER" layoutX="855.0" layoutY="216.0" prefHeight="30.0" prefWidth="225.0" promptText="Confirm Your Password" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css" />
+      <TextField id="textfield" fx:id="fullnameTxt" alignment="CENTER" layoutX="220.0" layoutY="136.0" prefHeight="20.0" prefWidth="225.0" promptText="Enter Your Full Name" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="fullnameLabel" layoutX="85.0" layoutY="139.0" text="Full Name:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="usernameLabel" layoutX="85.0" layoutY="218.0" text="Username:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="textfield" fx:id="usernameTxt" alignment="CENTER" layoutX="220.0" layoutY="215.0" prefHeight="20.0" prefWidth="225.0" promptText="Enter Your Username" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="passLabel" layoutX="718.0" layoutY="140.0" text="Password:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="confirmPassLabel" layoutX="648.0" layoutY="217.0" text="Confirm Password:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label fx:id="emailLabel" layoutX="85.0" layoutY="294.0" text="Email:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="textfield" fx:id="emailTxt" alignment="CENTER" layoutX="220.0" layoutY="291.0" prefHeight="20.0" prefWidth="225.0" promptText="Enter Your Email" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="mobileLabel" layoutX="742.0" layoutY="294.0" text="Mobile:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="textfield" fx:id="mobileTxt" alignment="CENTER" layoutX="855.0" layoutY="291.0" prefHeight="20.0" prefWidth="225.0" promptText="Enter Your Mobile Number" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Label fx:id="genderLabel" layoutX="85.0" layoutY="384.0" text="Gender:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="ifFemaleBtn" layoutX="246.0" layoutY="428.0" mnemonicParsing="false" onAction="#setGender" text="Female" textFill="WHITE" toggleGroup="$chooseGender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <RadioButton fx:id="ifOthersBtn" layoutX="246.0" layoutY="469.0" mnemonicParsing="false" onAction="#setGender" selected="true" text="Others" textFill="WHITE" toggleGroup="$chooseGender">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </RadioButton>
+      <Label fx:id="ageLabel" layoutX="768.0" layoutY="384.0" text="Age:" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <TextField id="textfield" fx:id="ageTxt" alignment="CENTER" layoutX="855.0" layoutY="382.0" prefHeight="20.0" prefWidth="225.0" promptText="Enter Your Age" style="-fx-border-color: #ffffff;" stylesheets="@../css/stylesheet.css">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </TextField>
+      <Button id="login" fx:id="backBtn" blendMode="ADD" layoutX="85.0" layoutY="566.0" mnemonicParsing="false" onAction="#handleClicksOnRegister" prefHeight="40.0" prefWidth="101.0" style="-fx-border-width: 2 2 2 2; -fx-border-color: white;" stylesheets="@../css/stylesheet.css" text="Back" textFill="WHITE">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

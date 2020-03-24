@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1200.0" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx" xmlns:fx="http://javafx.com/fxml" fx:controller="app.gui.HistoryController">
+   <children>
+      <VBox layoutY="77.0" prefHeight="623.0" prefWidth="250.0" style="-fx-background-color: #f7f7f7;">
+         <children>
+            <Button fx:id="profileBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="250.0" stylesheets="@../css/stylesheet.css" text="Profile" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="borrowBookBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="72.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Borrow Books" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="bookSeatBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="134.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Book A Seat" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="historyBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="196.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="History" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="settingsBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="258.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Settings" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+            <Button fx:id="logoutBtn" alignment="BASELINE_LEFT" layoutX="10.0" layoutY="320.0" maxHeight="-Infinity" maxWidth="-Infinity" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="62.0" prefWidth="334.0" stylesheets="@../css/stylesheet.css" text="Log Out" textFill="WHITE">
+               <padding>
+                  <Insets left="50.0" />
+               </padding>
+            </Button>
+         </children>
+      </VBox>
+      <Button fx:id="homeBtn" mnemonicParsing="false" onAction="#handleClicksOnHistory" prefHeight="78.0" prefWidth="250.0" style="-fx-background-color: #04b9ee;" text="SET THE DESK" textFill="WHITE">
+         <font>
+            <Font name="System Bold" size="24.0" />
+         </font>
+      </Button>
+      <VBox layoutX="250.0" prefHeight="700.0" prefWidth="951.0">
+         <children>
+            <GridPane prefHeight="717.0" prefWidth="951.0">
+              <columnConstraints>
+                <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints maxHeight="345.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+                <RowConstraints maxHeight="622.0" minHeight="10.0" prefHeight="622.0" vgrow="SOMETIMES" />
+              </rowConstraints>
+               <children>
+                  <VBox prefHeight="84.0" prefWidth="951.0" style="-fx-background-color: #04b9ee; -fx-border-color: #ffffff; -fx-border-width: 0 0 0 5; -fx-border-style: Dotted;" />
+                  <Label fx:id="promptTitleLabel" minHeight="-Infinity" minWidth="-Infinity" opacity="0.4" text="History" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="60.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets bottom="40.0" left="380.0" />
+                     </GridPane.margin>
+                  </Label>
+                  <Label fx:id="homeTitleLabel" layoutX="170.0" layoutY="335.0" minHeight="-Infinity" minWidth="-Infinity" text="History" textFill="WHITE">
+                     <font>
+                        <Font name="System Bold" size="18.0" />
+                     </font>
+                     <GridPane.margin>
+                        <Insets left="430.0" />
+                     </GridPane.margin>
+                  </Label>
+               </children>
+            </GridPane>
+         </children>
+      </VBox>
+   </children>
+</AnchorPane>

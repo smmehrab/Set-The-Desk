@@ -1,0 +1,63 @@
+.button{
+  -fx-background-color : #f7f7f7;
+  -fx-text-fill : #000000;
+  -fx-border-weight: 0 0 0 0;
+}
+
+.button:hover{
+  -fx-background-color : #5dd5f5;
+  -fx-text-fill : #ffffff;
+  -fx-font-weight : Bold;
+  -fx-font-size : 14;
+}
+
+.button:pressed{
+  -fx-background-color : #04b9ee;
+}
+
+#library{
+  -fx-background-color : #f7f7f7;
+  -fx-text-fill : #000000;
+}
+
+#library:hover{
+  -fx-background-color : #5dd5f5;
+  -fx-text-fill : #ffffff;
+  -fx-font-weight : Bold;
+  -fx-font-size : 14;
+}
+
+#login{
+  -fx-background-color : transparent;
+  -fx-text-fill : white;
+
+}
+
+#login:hover{
+  -fx-background-color : white;
+  -fx-text-fill : black;
+}
+
+#register{
+  -fx-background-color : transparent;
+  -fx-text-fill : white;
+
+}
+
+#register:hover{
+  -fx-underline: true;
+}
+
+#textfield{
+  -fx-background-color : transparent;
+  -fx-border-width : 0 0 2 0;
+  -fx-text-fill: white;
+  -fx-prompt-text-fill: rgba(255, 255, 255, 0.6) ;
+}
+
+#passfield{
+  -fx-background-color : transparent;
+  -fx-border-width : 0 0 2 0;
+  -fx-text-fill: white;
+  -fx-prompt-text-fill: rgba(255, 255, 255, 0.6) ;
+}
